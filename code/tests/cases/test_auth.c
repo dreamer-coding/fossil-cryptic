@@ -152,11 +152,11 @@ FOSSIL_TEST(c_test_auth_compute_invalid_base) {
 // * Fossil Logic Test Pool
 // * * * * * * * * * * * * * * * * * * * * * * * *
 FOSSIL_TEST_GROUP(c_auth_tests) {
-    FOSSIL_TEST_ADD(c_auth_fixture, c_test_auth_compute_null_params);
-    FOSSIL_TEST_ADD(c_auth_fixture, c_test_auth_compute_output_buffer_too_small);
-    FOSSIL_TEST_ADD(c_auth_fixture, c_test_auth_compute_invalid_algorithm);
-    FOSSIL_TEST_ADD(c_auth_fixture, c_test_auth_compute_invalid_bits);
-    FOSSIL_TEST_ADD(c_auth_fixture, c_test_auth_compute_invalid_base);
+    FOSSIL_ADD_TEST(c_auth_fixture, c_test_auth_compute_null_params);
+    FOSSIL_ADD_TEST(c_auth_fixture, c_test_auth_compute_output_buffer_too_small);
+    FOSSIL_ADD_TEST(c_auth_fixture, c_test_auth_compute_invalid_algorithm);
+    FOSSIL_ADD_TEST(c_auth_fixture, c_test_auth_compute_invalid_bits);
+    FOSSIL_ADD_TEST(c_auth_fixture, c_test_auth_compute_invalid_base);
 
-    FOSSIL_TEST_REGISTER(c_auth_fixture);
+    FOSSIL_ADD_SUITE(c_auth_fixture);
 } // end of tests

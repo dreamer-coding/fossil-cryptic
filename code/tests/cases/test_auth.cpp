@@ -152,11 +152,11 @@ FOSSIL_TEST(cpp_test_auth_compute_invalid_base) {
 // * Fossil Logic Test Pool
 // * * * * * * * * * * * * * * * * * * * * * * * *
 FOSSIL_TEST_GROUP(cpp_auth_tests) {
-    FOSSIL_TEST_ADD(cpp_auth_fixture, cpp_test_auth_compute_null_params);
-    FOSSIL_TEST_ADD(cpp_auth_fixture, cpp_test_auth_compute_output_buffer_too_small);
-    FOSSIL_TEST_ADD(cpp_auth_fixture, cpp_test_auth_compute_invalid_algorithm);
-    FOSSIL_TEST_ADD(cpp_auth_fixture, cpp_test_auth_compute_invalid_bits);
-    FOSSIL_TEST_ADD(cpp_auth_fixture, cpp_test_auth_compute_invalid_base);
+    FOSSIL_ADD_TEST(cpp_auth_fixture, cpp_test_auth_compute_null_params);
+    FOSSIL_ADD_TEST(cpp_auth_fixture, cpp_test_auth_compute_output_buffer_too_small);
+    FOSSIL_ADD_TEST(cpp_auth_fixture, cpp_test_auth_compute_invalid_algorithm);
+    FOSSIL_ADD_TEST(cpp_auth_fixture, cpp_test_auth_compute_invalid_bits);
+    FOSSIL_ADD_TEST(cpp_auth_fixture, cpp_test_auth_compute_invalid_base);
 
-    FOSSIL_TEST_REGISTER(cpp_auth_fixture);
+    FOSSIL_ADD_SUITE(cpp_auth_fixture);
 } // end of tests

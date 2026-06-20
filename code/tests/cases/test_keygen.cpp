@@ -127,13 +127,13 @@ FOSSIL_TEST(cpp_test_keygen_compute_unsupported_base) {
 // * Fossil Logic Test Pool
 // * * * * * * * * * * * * * * * * * * * * * * * *
 FOSSIL_TEST_GROUP(cpp_keygen_tests) {
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_basicpp_fnv_hex_u32);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_basicpp_fnv_hex_u64);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_crcpp_base64_u32);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_mix_auto_auto);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_null_arguments);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_unsupported_algorithm);
-    FOSSIL_TEST_ADD(cpp_keygen_fixture, cpp_test_keygen_compute_unsupported_base);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_basicpp_fnv_hex_u32);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_basicpp_fnv_hex_u64);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_crcpp_base64_u32);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_mix_auto_auto);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_null_arguments);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_unsupported_algorithm);
+    FOSSIL_ADD_TEST(cpp_keygen_fixture, cpp_test_keygen_compute_unsupported_base);
 
-    FOSSIL_TEST_REGISTER(cpp_keygen_fixture);
+    FOSSIL_ADD_SUITE(cpp_keygen_fixture);
 } // end of tests

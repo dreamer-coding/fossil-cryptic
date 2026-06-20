@@ -153,10 +153,10 @@ FOSSIL_TEST(c_test_cipher_compute_caesar_encrypt_decrypt) {
 // * Fossil Logic Test Pool
 // * * * * * * * * * * * * * * * * * * * * * * * *
 FOSSIL_TEST_GROUP(c_cipher_tests) {
-    FOSSIL_TEST_ADD(c_cipher_fixture, c_test_cipher_compute_basic_xor_encrypt_decrypt);
-    FOSSIL_TEST_ADD(c_cipher_fixture, c_test_cipher_compute_null_arguments);
-    FOSSIL_TEST_ADD(c_cipher_fixture, c_test_cipher_compute_unsupported_algorithm);
-    FOSSIL_TEST_ADD(c_cipher_fixture, c_test_cipher_compute_caesar_encrypt_decrypt);
+    FOSSIL_ADD_TEST(c_cipher_fixture, c_test_cipher_compute_basic_xor_encrypt_decrypt);
+    FOSSIL_ADD_TEST(c_cipher_fixture, c_test_cipher_compute_null_arguments);
+    FOSSIL_ADD_TEST(c_cipher_fixture, c_test_cipher_compute_unsupported_algorithm);
+    FOSSIL_ADD_TEST(c_cipher_fixture, c_test_cipher_compute_caesar_encrypt_decrypt);
 
-    FOSSIL_TEST_REGISTER(c_cipher_fixture);
+    FOSSIL_ADD_SUITE(c_cipher_fixture);
 } // end of tests
